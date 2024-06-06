@@ -1,8 +1,8 @@
+import React from 'react';
 const OrganizationIdPage = () => {
-    const { userId, orgId } = auth();
     return (
         <div>
-            Organisation: {orgId}
+            Organization Page!
         </div>
     );
 };
