@@ -1,8 +1,9 @@
 // pages/api/protected-route.ts
-import { auth } from '@clerk/nextjs/server';
+import { NextApiRequest, NextApiResponse } from 'next';
+import { getAuth } from '@clerk/nextjs/server';
 
-export default function handler(req, res) {
-  const { userId } = auth(req);
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+  const { userId } = getAuth(req);
 
   if (!userId) {
     return res.status(401).json({ error: 'Unauthorized' });
