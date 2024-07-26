@@ -1,6 +1,7 @@
 "use client";
 
 
+// import OrganizationLayout from '../layout'; 
 const OrganizationIdPage = () => {
    console.log('I am rendered in the browser')
 
@@ -18,4 +19,7 @@ const OrganizationIdPage = () => {
         </div>
     );
 };
+// OrganizationIdPage.getLayout = function getLayout(page: React.ReactNode) {
+//     return <OrganizationLayout>{page}</OrganizationLayout>;
+//   };
 export default OrganizationIdPage;
