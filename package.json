@@ -9,10 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@prisma/client": "^5.17.0",
     "@clerk/nextjs": "^5.1.4",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-separator": "^1.1.0",
+=======
+    "@clerk/nextjs": "^5.1.4",
+    "@prisma/client": "^5.17.0",
+>>>>>>> de2b092799e293c7ee1adf4fc2d77425ef0b5551
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
