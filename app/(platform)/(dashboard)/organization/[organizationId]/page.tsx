@@ -1,4 +1,5 @@
 import React from 'react';
+// import OrganizationLayout from '../layout'; 
 const OrganizationIdPage = () => {
     return (
         <div>
@@ -6,4 +7,7 @@ const OrganizationIdPage = () => {
         </div>
     );
 };
+// OrganizationIdPage.getLayout = function getLayout(page: React.ReactNode) {
+//     return <OrganizationLayout>{page}</OrganizationLayout>;
+//   };
 export default OrganizationIdPage;
