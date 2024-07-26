@@ -26,10 +26,23 @@ export const Sidebar = ({
         }
          return acc;
     }, []);
-    const onExpand = (id: string)
+    const onExpand = (id: string) => {
+        setExpanded((curr) => ({
+            ...curr,
+            [id]: !expanded[id],
+        }));
+    };
+
+    if(!isLoadedOrg || !isLoadedOrgList || userMemberships.isLoading){
+        return(
+            <>
+            <Skeleton/>
+            </>
+        );
+    };
     return(
         <div>
-            SideBar!
+            Sidebar!
         </div>
     );
-;}
+};
