@@ -1,8 +1,20 @@
-import React from 'react';
+"use client";
+
+
 const OrganizationIdPage = () => {
+   console.log('I am rendered in the browser')
+
     return (
         <div>
-            Organization Page!
+            <form>
+                <input
+                id="title"
+                name="title"
+                required
+                placeholder='enter a board title'
+                className='border-black border p-1'
+                />
+            </form>
         </div>
     );
 };
